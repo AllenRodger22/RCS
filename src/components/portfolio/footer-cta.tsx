@@ -11,19 +11,20 @@ export function FooterCTA() {
 
   return (
     <section id="contact" className="py-24 px-4">
-      <div className="max-w-5xl mx-auto rounded-[3rem] bg-primary p-12 md:p-24 text-center space-y-12 overflow-hidden relative">
-        {/* Decorative background element for the CTA card */}
+      <div className="max-w-5xl mx-auto rounded-[3rem] bg-primary p-12 md:p-24 text-center space-y-12 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
+        {/* Elementos decorativos de fundo */}
         <div className="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center gap-8">
-          <div className="relative w-20 h-20 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black/10">
+          {/* Este é o quadrado com o logo que você viu na imagem */}
+          <div className="relative w-24 h-24 rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black/20 backdrop-blur-sm flex items-center justify-center p-4">
             {logo && (
               <Image 
                 src={logo.imageUrl}
                 alt="RCS Logo"
                 fill
-                className="object-cover brightness-0 invert"
+                className="object-contain brightness-0 invert p-4"
                 data-ai-hint={logo.imageHint}
               />
             )}
@@ -37,7 +38,7 @@ export function FooterCTA() {
             <ContactDialog>
               <Button 
                 size="lg" 
-                className="rounded-full bg-white text-primary hover:bg-blue-600 hover:text-white font-black px-12 h-16 text-xl shadow-xl transition-all hover:scale-105 active:scale-95"
+                className="rounded-full bg-white text-primary hover:bg-blue-600 hover:text-white font-black px-12 h-16 text-xl shadow-xl transition-all hover:scale-105 active:scale-95 border-none"
               >
                 Let’s Chat!
               </Button>
