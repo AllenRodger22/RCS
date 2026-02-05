@@ -16,7 +16,7 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center gap-4">
-          <div className="relative w-64 h-32 mb-4">
+          <div className="relative w-[512px] h-[256px] mb-4 max-w-full">
             {logo && (
               <Image 
                 src={logo.imageUrl}
