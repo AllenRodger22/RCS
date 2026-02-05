@@ -4,11 +4,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ContactDialog } from "./contact-dialog"
-import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 export function FooterCTA() {
-  const logo = PlaceHolderImages.find(img => img.id === "logo-rcs");
-
   return (
     <section id="contact" className="py-24 px-4">
       <div className="max-w-5xl mx-auto rounded-[3.5rem] bg-primary pt-10 pb-16 px-6 md:px-12 text-center space-y-8 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
@@ -16,16 +13,14 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <div className="relative w-72 h-36 mb-2">
-            {logo && (
-              <Image 
-                src="/rcs.png"
-                alt="RCS Logo"
-                fill
-                className="object-contain brightness-[100] contrast-[100]"
-                priority
-              />
-            )}
+          <div className="relative h-[28px] w-[100px] mb-6">
+            <Image 
+              src="/rcs.png"
+              alt="RCS Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-4xl tracking-tight">
