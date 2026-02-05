@@ -12,15 +12,15 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <div className="relative flex items-center justify-center mb-6 w-full p-0">
+          <div className="relative flex items-center justify-center w-full p-0">
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
-              className="w-[280px] h-auto block object-contain max-h-none brightness-[5] filter contrast-200"
+              className="w-[300px] md:w-[500px] h-auto block object-contain max-h-none brightness-[5] filter contrast-200 mb-[-60px]"
             />
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-4xl tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-4xl tracking-tight relative z-20">
             Let’s chat and take your <br className="hidden md:block" /> YouTube channel to the next level.
           </h2>
           
