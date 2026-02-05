@@ -20,8 +20,8 @@ export function FooterCTA() {
             />
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-4xl tracking-tight relative z-20">
-            Let’s chat and take your <br className="hidden md:block" /> YouTube channel to the next level.
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-5xl mx-auto tracking-tight relative z-20">
+            Let’s chat and take your YouTube channel <br className="hidden md:block" /> to the next level.
           </h2>
           
           <div>
