@@ -18,7 +18,7 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-          <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-10 h-14 text-lg">
+          <Button asChild size="lg" className="rounded-full bg-primary hover:bg-blue-600 text-white font-bold px-10 h-14 text-lg border-none">
             <Link href="#work">Projects</Link>
           </Button>
           <ContactDialog>

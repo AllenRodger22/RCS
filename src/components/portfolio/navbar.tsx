@@ -12,13 +12,13 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between pointer-events-none">
       <div className="pointer-events-auto">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg border border-white/10 group-hover:scale-105 transition-transform">
+          <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg border border-white/10 group-hover:scale-105 transition-transform bg-white/5">
             {logo && (
               <Image 
                 src={logo.imageUrl}
                 alt="RCS Logo"
                 fill
-                className="object-cover"
+                className="object-cover brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
                 data-ai-hint={logo.imageHint}
               />
             )}

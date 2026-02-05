@@ -17,13 +17,13 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center gap-8">
-          <div className="relative w-20 h-20 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+          <div className="relative w-20 h-20 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black/10">
             {logo && (
               <Image 
                 src={logo.imageUrl}
                 alt="RCS Logo"
                 fill
-                className="object-cover"
+                className="object-cover brightness-0 invert"
                 data-ai-hint={logo.imageHint}
               />
             )}
