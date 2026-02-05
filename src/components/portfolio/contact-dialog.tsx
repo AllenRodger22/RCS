@@ -8,8 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import { Mail, Phone, MessageSquare } from "lucide-react"
+import { MessageSquare, Phone, Mail } from "lucide-react"
 
 interface ContactDialogProps {
   children: React.ReactNode
@@ -32,7 +31,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest font-bold text-muted-foreground">Discord</p>
-              <p className="text-lg font-bold text-white">allenrodger</p>
+              <p className="text-lg font-bold text-white">allenrodger.</p>
             </div>
           </div>
 
