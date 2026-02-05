@@ -1,7 +1,6 @@
 
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
@@ -28,7 +27,7 @@ export function Navbar() {
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
-              className="h-8 w-auto block object-contain"
+              className="h-8 w-auto block object-contain brightness-[5] filter contrast-200"
             />
           </div>
           <span className="font-light tracking-tighter text-xl text-white/90">Rodger Creations Studio</span>

@@ -7,16 +7,16 @@ import { ContactDialog } from "./contact-dialog"
 export function FooterCTA() {
   return (
     <section id="contact" className="py-24 px-4">
-      <div className="max-w-5xl mx-auto rounded-[3.5rem] bg-primary pt-10 pb-16 px-6 md:px-12 text-center space-y-8 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
+      <div className="max-w-5xl mx-auto rounded-[3.5rem] bg-primary pt-8 pb-16 px-6 md:px-12 text-center space-y-8 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
         <div className="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <div className="relative flex items-center justify-center mb-6 w-full">
+          <div className="relative flex items-center justify-center mb-6 w-full p-0">
             <img 
               src="/rcs.png"
-              alt="RCS Logo"
-              className="h-[120px] w-auto block object-contain"
+              alt="Rodger Creations Studio Logo"
+              className="w-[280px] h-auto block object-contain max-h-none brightness-[5] filter contrast-200"
             />
           </div>
           
