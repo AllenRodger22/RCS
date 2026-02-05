@@ -12,7 +12,8 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between pointer-events-none">
       <div className="pointer-events-auto">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg border border-white/10 group-hover:scale-105 transition-transform bg-white/5">
+          {/* Logo do topo - Ajustado para crop de 16:9 */}
+          <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg border border-white/10 group-hover:scale-110 transition-transform bg-white/5">
             {logo && (
               <Image 
                 src={logo.imageUrl}
