@@ -1,7 +1,6 @@
 
 "use client"
 
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ContactDialog } from "./contact-dialog"
 
@@ -13,11 +12,11 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <div className="relative flex items-center h-[36px] mb-6">
+          <div className="relative flex items-center justify-center h-14 mb-6 w-full">
             <img 
               src="/rcs.png"
               alt="RCS Logo"
-              className="h-9 w-auto block object-contain"
+              className="h-14 w-auto block object-contain"
             />
           </div>
           

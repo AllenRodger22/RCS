@@ -24,7 +24,7 @@ export function Navbar() {
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-4">
-          <div className="relative flex items-center h-[32px]">
+          <div className="relative flex items-center h-8">
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
