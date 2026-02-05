@@ -30,7 +30,7 @@ export function About() {
           
           <div className="space-y-6 text-muted-foreground">
             <p className="text-lg leading-relaxed">
-              I have over a year of specialized experience in high-impact editing for gaming content and YouTube Shorts. 
+              Hi, Rodger here! I have over a year of specialized experience in high-impact editing for gaming content and YouTube Shorts. 
               My focus isn&apos;t just on putting clips together, but on driving real growth for creators.
             </p>
             
