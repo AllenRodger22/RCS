@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { ContactDialog } from "./contact-dialog";
 
 export function FooterCTA() {
   return (
@@ -14,12 +15,14 @@ export function FooterCTA() {
         </h2>
         
         <div className="relative z-10">
-          <Button 
-            size="lg" 
-            className="rounded-full bg-white text-primary hover:bg-neutral-100 font-black px-12 h-16 text-xl shadow-xl transition-transform hover:scale-105 active:scale-95"
-          >
-            Let’s Chat!
-          </Button>
+          <ContactDialog>
+            <Button 
+              size="lg" 
+              className="rounded-full bg-white text-primary hover:bg-neutral-100 font-black px-12 h-16 text-xl shadow-xl transition-transform hover:scale-105 active:scale-95"
+            >
+              Let’s Chat!
+            </Button>
+          </ContactDialog>
         </div>
       </div>
       

@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ContactDialog } from "./contact-dialog";
 
 export function Hero() {
   return (
@@ -20,9 +21,11 @@ export function Hero() {
           <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-10 h-14 text-lg">
             <Link href="#work">Projects</Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="rounded-full border-2 border-primary text-primary hover:bg-primary/10 font-bold px-10 h-14 text-lg bg-transparent">
-            <Link href="#contact">Contact</Link>
-          </Button>
+          <ContactDialog>
+            <Button variant="outline" size="lg" className="rounded-full border-2 border-primary text-primary hover:bg-primary/10 font-bold px-10 h-14 text-lg bg-transparent">
+              Contact
+            </Button>
+          </ContactDialog>
         </div>
       </div>
       
