@@ -1,10 +1,9 @@
-
 import { Check } from "lucide-react";
 
 const BENEFITS = [
   "Clear and direct communication.",
   "Fast delivery, always on time.",
-  "Unlimited revisions — I stop only when you’re satisfied."
+  "Unlimited revisions"
 ];
 
 export function ValueProp() {
