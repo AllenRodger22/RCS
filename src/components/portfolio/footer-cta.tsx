@@ -13,7 +13,7 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center">
-          <div className="relative h-[28px] w-[100px] mb-6">
+          <div className="relative h-[32px] md:h-[36px] w-[120px] mb-6">
             <Image 
               src="/rcs.png"
               alt="RCS Logo"
