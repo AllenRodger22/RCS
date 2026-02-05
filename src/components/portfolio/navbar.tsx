@@ -26,7 +26,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-4">
           <div className="relative h-[32px] md:h-[36px] w-[100px]">
             <Image 
-              src="/rcs.png"
+              src="/rcs.svg"
               alt="Rodger Creations Studio Logo"
               fill
               priority
