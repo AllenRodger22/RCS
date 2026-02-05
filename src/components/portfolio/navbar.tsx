@@ -1,3 +1,4 @@
+
 "use client"
 
 import Image from "next/image"
@@ -8,17 +9,17 @@ export function Navbar() {
   const logo = PlaceHolderImages.find(img => img.id === "logo-rcs");
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6 flex items-center justify-between pointer-events-auto">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between pointer-events-auto">
       <div className="pointer-events-auto">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-14 h-14 rounded-2xl overflow-hidden shadow-xl border border-white/10 group-hover:scale-110 transition-transform bg-black/20 backdrop-blur-md">
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="relative w-24 h-14 transition-transform group-hover:scale-105">
             {logo && (
               <Image 
                 src={logo.imageUrl}
                 alt="RCS Logo"
                 fill
                 priority
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={logo.imageHint}
               />
             )}

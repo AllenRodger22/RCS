@@ -1,3 +1,4 @@
+
 "use client"
 
 import Image from "next/image"
@@ -10,18 +11,18 @@ export function FooterCTA() {
 
   return (
     <section id="contact" className="py-24 px-4">
-      <div className="max-w-5xl mx-auto rounded-[3rem] bg-primary p-12 md:p-24 text-center space-y-12 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
+      <div className="max-w-5xl mx-auto rounded-[3rem] bg-primary p-12 md:p-16 text-center space-y-8 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
         <div className="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 flex flex-col items-center gap-8">
-          <div className="relative w-40 h-40 rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 bg-white/10 backdrop-blur-sm">
+        <div className="relative z-10 flex flex-col items-center gap-4">
+          <div className="relative w-64 h-32 mb-4">
             {logo && (
               <Image 
                 src={logo.imageUrl}
                 alt="RCS Logo"
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={logo.imageHint}
               />
             )}
@@ -31,7 +32,7 @@ export function FooterCTA() {
             Let’s chat and take your <br className="hidden md:block" /> YouTube channel to the next level.
           </h2>
           
-          <div>
+          <div className="pt-4">
             <ContactDialog>
               <Button 
                 size="lg" 
