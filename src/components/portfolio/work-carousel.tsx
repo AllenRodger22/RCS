@@ -48,16 +48,16 @@ function getYouTubeEmbedUrl(url: string) {
 
 export function WorkCarousel() {
   return (
-    <section id="work" className="py-24 px-4 bg-black/20">
+    <section id="work" className="py-24 px-4 bg-black/20 overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-12 text-left">
+        <div className="mb-12 text-left px-4 md:px-0">
           <h2 className="text-4xl md:text-5xl font-black font-headline mb-2">My Work</h2>
           <p className="text-primary font-bold tracking-widest uppercase text-sm">Recent Work</p>
         </div>
 
         <Carousel
           opts={{
-            align: "start",
+            align: "center",
             loop: true,
           }}
           className="w-full"
@@ -68,7 +68,7 @@ export function WorkCarousel() {
               const embedUrl = getYouTubeEmbedUrl(work.url);
 
               return (
-                <CarouselItem key={work.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                <CarouselItem key={work.id} className="pl-4 basis-[75%] sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                   <div className="p-1">
                     <Dialog>
                       <DialogTrigger asChild>
@@ -85,7 +85,7 @@ export function WorkCarousel() {
                             )}
                             
                             <div className="absolute inset-0 flex items-center justify-center z-10">
-                              <div className="w-16 h-16 rounded-full bg-white group-hover:bg-blue-600 flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
+                              <div className="w-16 h-16 rounded-full bg-white/90 group-hover:bg-blue-600 flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
                                 <Play className="text-neutral-500 group-hover:text-white w-8 h-8 fill-current ml-1 transition-colors" />
                               </div>
                             </div>
