@@ -22,7 +22,7 @@ export function Hero() {
             <Link href="#work">Projects</Link>
           </Button>
           <ContactDialog>
-            <Button variant="outline" size="lg" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold px-10 h-14 text-lg bg-transparent transition-colors">
+            <Button variant="outline" size="lg" className="rounded-full border-2 border-primary text-primary hover:bg-blue-600 hover:border-blue-600 hover:text-white font-bold px-10 h-14 text-lg bg-transparent transition-all">
               Contact
             </Button>
           </ContactDialog>

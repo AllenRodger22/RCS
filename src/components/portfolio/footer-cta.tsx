@@ -18,7 +18,7 @@ export function FooterCTA() {
           <ContactDialog>
             <Button 
               size="lg" 
-              className="rounded-full bg-white text-primary hover:bg-neutral-100 font-black px-12 h-16 text-xl shadow-xl transition-transform hover:scale-105 active:scale-95"
+              className="rounded-full bg-white text-primary hover:bg-blue-600 hover:text-white font-black px-12 h-16 text-xl shadow-xl transition-all hover:scale-105 active:scale-95"
             >
               Let’s Chat!
             </Button>

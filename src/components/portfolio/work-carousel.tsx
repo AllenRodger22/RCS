@@ -16,22 +16,22 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const WORKS = [
   {
-    title: "Viral Retention Gaming Shorts",
+    title: "Introduction",
     id: "work-1",
-    url: "#"
+    url: "https://youtube.com/shorts/5dd3ZVhdiU4?feature=share"
   },
   {
-    title: "Roblox Fast-Paced Gameplay",
+    title: "Police Frog",
     id: "work-2",
-    url: "#"
+    url: "https://youtube.com/shorts/SjNyuxpLyDw?feature=share"
   },
   {
-    title: "YouTube Growth Strategy Edit",
+    title: "RANT",
     id: "work-3",
-    url: "#"
+    url: "https://youtube.com/shorts/j2LZhWu-Nwg?feature=share"
   },
   {
-    title: "High Hook Rate Montage",
+    title: "Future Project",
     id: "work-4",
     url: "#"
   }
@@ -59,36 +59,38 @@ export function WorkCarousel() {
               return (
                 <CarouselItem key={work.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                   <div className="p-1">
-                    <Card className="bg-secondary border-none overflow-hidden group hover:ring-2 hover:ring-primary transition-all duration-300 rounded-2xl cursor-pointer">
-                      <CardContent className="p-0 flex aspect-[9/16] relative">
-                        {image && (
-                          <Image
-                            src={image.imageUrl}
-                            alt={work.title}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            data-ai-hint={image.imageHint}
-                          />
-                        )}
-                        
-                        {/* Play Icon Overlay */}
-                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                          <div className="w-16 h-16 rounded-full bg-white group-hover:bg-primary flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
-                            <Play className="text-neutral-500 group-hover:text-white w-8 h-8 fill-current ml-1 transition-colors" />
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="block">
+                      <Card className="bg-secondary border-none overflow-hidden group hover:ring-2 hover:ring-primary transition-all duration-300 rounded-2xl cursor-pointer">
+                        <CardContent className="p-0 flex aspect-[9/16] relative">
+                          {image && (
+                            <Image
+                              src={image.imageUrl}
+                              alt={work.title}
+                              fill
+                              className="object-cover group-hover:scale-105 transition-transform duration-500"
+                              data-ai-hint={image.imageHint}
+                            />
+                          )}
+                          
+                          {/* Play Icon Overlay */}
+                          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            <div className="w-16 h-16 rounded-full bg-white group-hover:bg-primary flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
+                              <Play className="text-neutral-500 group-hover:text-white w-8 h-8 fill-current ml-1 transition-colors" />
+                            </div>
                           </div>
-                        </div>
 
-                        {/* Text Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-20">
-                          <h3 className="text-white font-bold text-lg mb-2">{work.title}</h3>
-                          <span 
-                            className="text-primary group-hover:text-white font-bold text-sm uppercase tracking-wider group-hover:translate-x-1 transition-all inline-flex items-center gap-1"
-                          >
-                            Watch Short <Play className="w-3 h-3 fill-current" />
-                          </span>
-                        </div>
-                      </CardContent>
-                    </Card>
+                          {/* Text Gradient Overlay */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-20">
+                            <h3 className="text-white font-bold text-lg mb-2">{work.title}</h3>
+                            <span 
+                              className="text-primary group-hover:text-white font-bold text-sm uppercase tracking-wider group-hover:translate-x-1 transition-all inline-flex items-center gap-1"
+                            >
+                              Watch Short <Play className="w-3 h-3 fill-current" />
+                            </span>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </a>
                   </div>
                 </CarouselItem>
               );
