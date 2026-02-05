@@ -73,8 +73,8 @@ export function WorkCarousel() {
                         
                         {/* Play Icon Overlay */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                          <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                            <Play className="text-white w-8 h-8 fill-current ml-1" />
+                          <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                            <Play className="text-primary w-8 h-8 fill-current ml-1" />
                           </div>
                         </div>
 
