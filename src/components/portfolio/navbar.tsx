@@ -27,7 +27,7 @@ export function Navbar() {
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
-              className="h-8 w-auto block object-contain brightness-[5] filter contrast-200"
+              className="h-[100px] w-auto block object-contain brightness-[10] filter contrast-200 mt-[-30px] mb-[-30px]"
             />
           </div>
           <span className="font-light tracking-tighter text-xl text-white/90">Rodger Creations Studio</span>
