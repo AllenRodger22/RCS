@@ -16,7 +16,7 @@ export function FooterCTA() {
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
-              className="w-[300px] md:w-[500px] h-auto block object-contain max-h-none brightness-[5] filter contrast-200 mb-[-60px]"
+              className="w-[300px] md:w-[500px] h-auto block object-contain max-h-none brightness-[5] filter contrast-200 mb-[-60px] mt-[-80px]"
             />
           </div>
           
