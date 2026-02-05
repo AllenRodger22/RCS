@@ -9,7 +9,7 @@ const BENEFITS = [
 
 export function ValueProp() {
   return (
-    <section className="py-24 px-4 bg-secondary/30">
+    <section className="py-16 md:py-24 px-4 bg-secondary/30">
       <div className="max-w-4xl mx-auto text-center space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {BENEFITS.map((benefit, index) => (

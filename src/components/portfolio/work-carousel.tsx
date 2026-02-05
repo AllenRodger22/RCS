@@ -48,7 +48,7 @@ function getYouTubeEmbedUrl(url: string) {
 
 export function WorkCarousel() {
   return (
-    <section id="work" className="py-24 px-4 bg-black/20 overflow-hidden">
+    <section id="work" className="py-16 md:py-24 px-4 bg-black/20 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-left px-4 md:px-0">
           <h2 className="text-4xl md:text-5xl font-black font-headline mb-2">My Work</h2>

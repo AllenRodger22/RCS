@@ -5,7 +5,7 @@ import { ContactDialog } from "./contact-dialog";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
+    <section className="relative min-h-[85vh] md:min-h-screen flex flex-col items-center justify-center text-center px-6 py-16 md:py-20 overflow-hidden">
       <div className="max-w-4xl mx-auto space-y-8 z-10">
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black font-headline tracking-tighter leading-[0.95] animate-in fade-in slide-in-from-bottom-8 duration-700">
           Transforming Vision <br />
