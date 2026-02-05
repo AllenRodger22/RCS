@@ -73,8 +73,8 @@ export function WorkCarousel() {
                         
                         {/* Play Icon Overlay */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                          <div className="w-16 h-16 rounded-full bg-neutral-200/90 flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                            <Play className="text-neutral-500 w-8 h-8 fill-current ml-1" />
+                          <div className="w-16 h-16 rounded-full bg-white group-hover:bg-primary flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
+                            <Play className="text-neutral-500 group-hover:text-white w-8 h-8 fill-current ml-1 transition-colors" />
                           </div>
                         </div>
 
@@ -82,7 +82,7 @@ export function WorkCarousel() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-20">
                           <h3 className="text-white font-bold text-lg mb-2">{work.title}</h3>
                           <span 
-                            className="text-primary font-bold text-sm uppercase tracking-wider group-hover:translate-x-1 transition-transform inline-flex items-center gap-1"
+                            className="text-primary group-hover:text-white font-bold text-sm uppercase tracking-wider group-hover:translate-x-1 transition-all inline-flex items-center gap-1"
                           >
                             Watch Short <Play className="w-3 h-3 fill-current" />
                           </span>
