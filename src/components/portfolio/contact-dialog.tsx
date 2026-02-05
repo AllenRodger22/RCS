@@ -1,3 +1,4 @@
+
 "use client"
 
 import {
@@ -24,8 +25,8 @@ export function ContactDialog({ children }: ContactDialogProps) {
           <DialogTitle className="text-2xl font-black font-headline text-white">Let's Connect</DialogTitle>
         </DialogHeader>
         <div className="space-y-6 py-6">
-          <div className="flex items-center gap-4 p-4 bg-black/20 rounded-2xl group hover:bg-primary/10 transition-colors">
-            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+          <div className="flex items-center gap-4 p-4 bg-black/20 rounded-2xl group hover:bg-blue-600/20 transition-colors">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-blue-600 group-hover:text-white transition-colors">
               <MessageSquare className="w-6 h-6" />
             </div>
             <div>
@@ -34,8 +35,8 @@ export function ContactDialog({ children }: ContactDialogProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 p-4 bg-black/20 rounded-2xl group hover:bg-primary/10 transition-colors">
-            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+          <div className="flex items-center gap-4 p-4 bg-black/20 rounded-2xl group hover:bg-blue-600/20 transition-colors">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-blue-600 group-hover:text-white transition-colors">
               <Phone className="w-6 h-6" />
             </div>
             <div>
@@ -44,8 +45,8 @@ export function ContactDialog({ children }: ContactDialogProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 p-4 bg-black/20 rounded-2xl group hover:bg-primary/10 transition-colors">
-            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+          <div className="flex items-center gap-4 p-4 bg-black/20 rounded-2xl group hover:bg-blue-600/20 transition-colors">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-blue-600 group-hover:text-white transition-colors">
               <Mail className="w-6 h-6" />
             </div>
             <div>

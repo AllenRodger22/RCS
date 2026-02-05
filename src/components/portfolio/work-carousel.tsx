@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -71,7 +72,7 @@ export function WorkCarousel() {
                   <div className="p-1">
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Card className="bg-secondary border-none overflow-hidden group hover:ring-2 hover:ring-primary transition-all duration-300 rounded-2xl cursor-pointer">
+                        <Card className="bg-secondary border-none overflow-hidden group hover:ring-2 hover:ring-blue-600 transition-all duration-300 rounded-2xl cursor-pointer">
                           <CardContent className="p-0 flex aspect-[9/16] relative">
                             {image && (
                               <Image
@@ -84,7 +85,7 @@ export function WorkCarousel() {
                             )}
                             
                             <div className="absolute inset-0 flex items-center justify-center z-10">
-                              <div className="w-16 h-16 rounded-full bg-white group-hover:bg-primary flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
+                              <div className="w-16 h-16 rounded-full bg-white group-hover:bg-blue-600 flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
                                 <Play className="text-neutral-500 group-hover:text-white w-8 h-8 fill-current ml-1 transition-colors" />
                               </div>
                             </div>
@@ -98,7 +99,7 @@ export function WorkCarousel() {
                           </CardContent>
                         </Card>
                       </DialogTrigger>
-                      <DialogContent className="max-w-sm p-0 bg-transparent border-none overflow-hidden sm:max-w-lg aspect-[9/16]">
+                      <DialogContent className="max-w-[320px] p-0 bg-transparent border-none overflow-hidden sm:max-w-md aspect-[9/16]">
                         <DialogTitle className="sr-only">{work.title}</DialogTitle>
                         {embedUrl ? (
                           <iframe
@@ -120,8 +121,8 @@ export function WorkCarousel() {
             })}
           </CarouselContent>
           <div className="hidden md:flex justify-end gap-4 mt-8">
-            <CarouselPrevious className="static translate-y-0 h-12 w-12 border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent" />
-            <CarouselNext className="static translate-y-0 h-12 w-12 border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent" />
+            <CarouselPrevious className="static translate-y-0 h-12 w-12 border-2 border-primary text-primary hover:bg-blue-600 hover:border-blue-600 hover:text-white bg-transparent transition-colors" />
+            <CarouselNext className="static translate-y-0 h-12 w-12 border-2 border-primary text-primary hover:bg-blue-600 hover:border-blue-600 hover:text-white bg-transparent transition-colors" />
           </div>
         </Carousel>
       </div>
