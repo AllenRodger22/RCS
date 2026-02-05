@@ -1,9 +1,8 @@
-
 "use client"
 
 import * as React from "react"
 import Image from "next/image"
-import { Play, X } from "lucide-react"
+import { Play } from "lucide-react"
 import {
   Carousel,
   CarouselContent,
@@ -40,7 +39,6 @@ const WORKS = [
 
 function getYouTubeEmbedUrl(url: string) {
   if (url === "#") return null;
-  // Extract video ID from shorts URL
   const match = url.match(/shorts\/([^?]+)/);
   const videoId = match ? match[1] : null;
   if (!videoId) return null;
@@ -48,8 +46,6 @@ function getYouTubeEmbedUrl(url: string) {
 }
 
 export function WorkCarousel() {
-  const [selectedWork, setSelectedWork] = React.useState<typeof WORKS[0] | null>(null);
-
   return (
     <section id="work" className="py-24 px-4 bg-black/20">
       <div className="max-w-6xl mx-auto">
@@ -87,19 +83,15 @@ export function WorkCarousel() {
                               />
                             )}
                             
-                            {/* Play Icon Overlay */}
                             <div className="absolute inset-0 flex items-center justify-center z-10">
                               <div className="w-16 h-16 rounded-full bg-white group-hover:bg-primary flex items-center justify-center shadow-xl transform scale-75 group-hover:scale-100 transition-all duration-300">
                                 <Play className="text-neutral-500 group-hover:text-white w-8 h-8 fill-current ml-1 transition-colors" />
                               </div>
                             </div>
 
-                            {/* Text Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-20">
                               <h3 className="text-white font-bold text-lg mb-2">{work.title}</h3>
-                              <span 
-                                className="text-primary group-hover:text-white font-bold text-sm uppercase tracking-wider group-hover:translate-x-1 transition-all inline-flex items-center gap-1"
-                              >
+                              <span className="text-primary group-hover:text-white font-bold text-sm uppercase tracking-wider group-hover:translate-x-1 transition-all inline-flex items-center gap-1">
                                 Watch Direct <Play className="w-3 h-3 fill-current" />
                               </span>
                             </div>

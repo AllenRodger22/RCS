@@ -1,4 +1,3 @@
-
 "use client"
 
 import Image from "next/image"
@@ -19,7 +18,7 @@ export function Navbar() {
                 alt="RCS Logo"
                 fill
                 priority
-                className="object-cover transition-opacity"
+                className="object-cover"
                 data-ai-hint={logo.imageHint}
               />
             )}

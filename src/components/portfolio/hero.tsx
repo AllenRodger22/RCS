@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ContactDialog } from "./contact-dialog";
@@ -29,7 +28,6 @@ export function Hero() {
         </div>
       </div>
       
-      {/* Subtle decorative background element */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] -z-0 pointer-events-none" />
     </section>
   );

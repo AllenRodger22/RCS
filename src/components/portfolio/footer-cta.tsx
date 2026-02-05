@@ -1,4 +1,3 @@
-
 "use client"
 
 import Image from "next/image"
@@ -16,13 +15,12 @@ export function FooterCTA() {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center gap-8">
-          <div className="relative w-40 h-40 rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 bg-white/10 backdrop-blur-sm flex items-center justify-center">
+          <div className="relative w-40 h-40 rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 bg-white/10 backdrop-blur-sm">
             {logo && (
               <Image 
                 src={logo.imageUrl}
                 alt="RCS Logo"
                 fill
-                priority
                 className="object-cover"
                 data-ai-hint={logo.imageHint}
               />
