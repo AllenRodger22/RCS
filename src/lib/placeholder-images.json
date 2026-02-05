@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-photo",
+      "description": "Rodger's professional headshot",
+      "imageUrl": "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMG1hbnxlbnwwfHx8fDE3NzAzMjIzNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot man"
+    },
+    {
+      "id": "work-1",
+      "description": "YouTube Shorts - Gaming Content",
+      "imageUrl": "https://images.unsplash.com/photo-1694878982098-1cec80d96eca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnYW1pbmclMjB5b3V0dWJlJTIwc2hvcnR8ZW58MHx8fHwxNzcwMzIyMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gaming youtube short"
+    },
+    {
+      "id": "work-2",
+      "description": "Roblox Viral Clip",
+      "imageUrl": "https://picsum.photos/seed/work2/1080/1920",
+      "imageHint": "roblox gameplay"
+    },
+    {
+      "id": "work-3",
+      "description": "Fast-paced Retention Edit",
+      "imageUrl": "https://images.unsplash.com/photo-1698300113381-6c5df7400fbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aW9uJTIwdmlkZW8lMjBnYW1lfGVufDB8fHx8MTc3MDMyMjM3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "action video game"
+    },
+    {
+      "id": "work-4",
+      "description": "Viral Growth Strategy Edit",
+      "imageUrl": "https://images.unsplash.com/photo-1725439507649-dd6345bf9c7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHJlYW1pbmclMjBnYW1pbmd8ZW58MHx8fHwxNzcwMzIyMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "streaming gaming"
+    }
+  ]
 }
