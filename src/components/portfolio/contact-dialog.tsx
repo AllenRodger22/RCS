@@ -41,7 +41,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest font-bold text-muted-foreground">WhatsApp / Phone</p>
-              <p className="text-lg font-bold text-white">+55 85 9531-5653</p>
+              <p className="text-lg font-bold text-white">+55 85 98531-5653</p>
             </div>
           </div>
 
