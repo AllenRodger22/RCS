@@ -12,7 +12,7 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -22,12 +22,12 @@ export function Navbar() {
       isScrolled ? "bg-background/40 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-4">
-          <div className="relative flex items-center h-8">
+        <Link href="/" className="flex items-center gap-4 group">
+          <div className="relative flex items-center h-8 overflow-visible">
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
-              className="h-[100px] w-auto block object-contain brightness-[10] filter contrast-200 mt-[-30px] mb-[-30px]"
+              className="h-[100px] w-auto block object-contain brightness-[10] filter contrast-200 mt-[-30px] mb-[-30px] transition-transform group-hover:scale-105"
             />
           </div>
           <span className="font-light tracking-tighter text-xl text-white/90">Rodger Creations Studio</span>
