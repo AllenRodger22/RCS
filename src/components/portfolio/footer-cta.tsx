@@ -1,4 +1,3 @@
-
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -23,12 +22,12 @@ export function FooterCTA() {
             <img 
               src="/rcs.png"
               alt="Rodger Creations Studio Logo"
-              className="w-[300px] md:w-[500px] h-auto block object-contain max-h-none brightness-[10] filter contrast-200 mb-[-60px] mt-[-80px]"
+              className="w-[300px] md:w-[500px] h-auto block object-contain max-h-none brightness-[10] filter contrast-200 mb-[-60px] mt-[-80px] pointer-events-none"
             />
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-5xl mx-auto tracking-tight relative z-20">
-            Let’s chat and take your YouTube channel <br className="hidden md:block" /> to the next level.
+            Ready to dominate the algorithm <br className="hidden md:block" /> and grow your audience?
           </h2>
           
           <div>
@@ -37,7 +36,7 @@ export function FooterCTA() {
                 size="lg" 
                 className="rounded-full bg-white text-primary hover:bg-blue-600 hover:text-white font-bold px-10 h-14 text-lg shadow-xl transition-all hover:scale-105 active:scale-95 border-none"
               >
-                Let’s Chat!
+                Let&apos;s Scale Together!
               </Button>
             </ContactDialog>
           </div>

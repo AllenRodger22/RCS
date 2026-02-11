@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -26,26 +25,25 @@ export function About() {
         </div>
 
         <div className="space-y-8">
-          <h2 className="text-4xl md:text-5xl font-black font-headline">Who I Am</h2>
+          <h2 className="text-4xl md:text-5xl font-black font-headline text-white">Retention Engineer</h2>
           
           <div className="space-y-6 text-muted-foreground">
             <p className="text-lg leading-relaxed">
-              Hi, Rodger here! I have over a year of specialized experience in high-impact editing for gaming content and YouTube Shorts. 
-              My focus isn&apos;t just on putting clips together, but on driving real growth for creators.
+              Hi, I&apos;m Rodger. I specialize in the science of retention. My editing style is built around psychological hooks, perfect pacing, and dynamic storytelling that keeps viewers watching until the very last second.
             </p>
             
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <span className="text-primary font-bold">●</span>
-                <span>Specialized in fast-paced editing with strong rhythm and hooks.</span>
+                <span><strong>Gaming Specialist:</strong> Expert in translating complex gameplay into digestible, viral stories.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">●</span>
-                <span>Strong understanding of retention, pacing, and viral mechanics.</span>
+                <span><strong>Short-Form Mastery:</strong> Specialized in TikTok, Reels, and Shorts designed to hit the algorithm.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-primary font-bold">●</span>
-                <span>Strategic collaborator, able to work alongside channel growth teams.</span>
+                <span><strong>Growth Focused:</strong> I don&apos;t just edit videos; I collaborate on your channel&apos;s strategic growth.</span>
               </li>
             </ul>
           </div>
@@ -53,7 +51,7 @@ export function About() {
           <div className="pt-6">
             <div className="inline-block px-8 py-4 bg-secondary rounded-2xl border-l-4 border-primary">
               <span className="text-4xl font-black text-white">100+</span>
-              <span className="ml-4 text-muted-foreground uppercase tracking-widest font-bold text-sm">Videos Edited</span>
+              <span className="ml-4 text-muted-foreground uppercase tracking-widest font-bold text-sm">Videos Optimized</span>
             </div>
           </div>
         </div>
