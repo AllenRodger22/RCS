@@ -12,39 +12,40 @@ export function FooterCTA() {
   }, []);
 
   return (
-    <section id="contact" className="py-16 md:py-24 px-4">
-      <div className="max-w-5xl mx-auto rounded-[3.5rem] bg-primary pt-[20px] pb-16 px-6 md:px-12 text-center space-y-8 overflow-hidden relative shadow-[0_20px_50px_rgba(255,65,54,0.3)]">
-        <div className="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-black/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative z-10 flex flex-col items-center">
-          <div className="relative flex items-center justify-center w-full p-0">
-            <img 
-              src="/rcs.png"
-              alt="Rodger Creations Studio Logo"
-              className="w-[300px] md:w-[500px] h-auto block object-contain max-h-none brightness-[10] filter contrast-200 mb-[-60px] mt-[-80px] pointer-events-none"
-            />
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-headline text-white leading-[1.15] mb-10 max-w-5xl mx-auto tracking-tight relative z-20">
-            Ready to dominate the algorithm <br className="hidden md:block" /> and grow your audience?
+    <section id="contact" className="py-32 px-6 bg-black">
+      <div className="max-w-6xl mx-auto border-4 border-primary p-12 md:p-24 relative overflow-hidden bg-primary/5">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-primary translate-x-16 -translate-y-16 rotate-45" />
+        
+        <div className="relative z-10 flex flex-col items-center text-center space-y-12">
+          <h2 className="text-6xl md:text-8xl lg:text-9xl font-black font-headline text-white leading-[0.85] tracking-tighter">
+            READY TO<br />
+            <span className="text-primary">SCALE YOUR</span><br />
+            AUDIENCE?
           </h2>
           
-          <div>
-            <ContactDialog>
-              <Button 
-                size="lg" 
-                className="rounded-full bg-white text-primary hover:bg-blue-600 hover:text-white font-bold px-10 h-14 text-lg shadow-xl transition-all hover:scale-105 active:scale-95 border-none"
-              >
-                Let&apos;s Scale Together!
-              </Button>
-            </ContactDialog>
-          </div>
+          <ContactDialog>
+            <Button 
+              size="lg" 
+              className="rounded-none bg-primary text-black hover:bg-white hover:text-black font-black px-16 h-20 text-2xl transition-all shadow-[12px_12px_0px_0px_rgba(255,255,255,0.1)] glitch-hover uppercase border-none"
+            >
+              Let&apos;s Work Together ➔
+            </Button>
+          </ContactDialog>
         </div>
       </div>
       
-      <footer className="mt-16 text-center text-muted-foreground text-sm uppercase tracking-widest font-bold">
-        © {year || '...'} Rodger Creations Studio
+      <footer className="mt-32 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-white/10 pt-12">
+        <div className="flex items-center gap-6">
+          <img src="/rcs.png" alt="Logo" className="h-12 w-auto brightness-[10]" />
+          <span className="font-mono text-xs text-white/40 uppercase tracking-widest">© {year || '...'} Rodger Creations Studio</span>
+        </div>
+        <div className="flex gap-8 font-mono text-[10px] text-white/20 uppercase tracking-[0.5em]">
+          <span>RETENTION</span>
+          <span>//</span>
+          <span>GROWTH</span>
+          <span>//</span>
+          <span>VIRAL</span>
+        </div>
       </footer>
     </section>
   );

@@ -5,12 +5,45 @@ export function About() {
   const profileImage = PlaceHolderImages.find(img => img.id === "profile-photo");
 
   return (
-    <section className="py-16 md:py-24 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <div className="flex justify-center md:justify-start">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-            <div className="absolute inset-0 rounded-full border-4 border-primary shadow-[0_0_50px_-12px_rgba(255,65,54,0.5)] z-0" />
-            <div className="absolute inset-2 rounded-full overflow-hidden z-10">
+    <section id="about" className="py-32 px-6 border-t border-white/10 bg-[#050505]">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="order-2 lg:order-1 space-y-12">
+          <div className="space-y-4">
+            <span className="text-primary font-mono text-sm tracking-[0.3em]">/ THE_ENGINEER</span>
+            <h2 className="text-7xl md:text-8xl font-black leading-[0.85] tracking-tighter">
+              NOT JUST<br />AN EDITOR.
+            </h2>
+          </div>
+          
+          <div className="space-y-8 font-mono text-lg text-white/60 leading-relaxed uppercase">
+            <p>
+              I am a Retention Engineer. My focus is the science behind the scroll: psychological hooks, millimetric pacing, and high-impact sound design.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+              <div className="border-l-4 border-primary pl-6 py-4 bg-white/5">
+                <span className="text-white font-bold block mb-2">STRATEGIC HOOKS</span>
+                <span>CRITICAL 3-SECOND VALIDATION</span>
+              </div>
+              <div className="border-l-4 border-primary pl-6 py-4 bg-white/5">
+                <span className="text-white font-bold block mb-2">PACE PHYSICS</span>
+                <span>ZERO-FRICTION STORYTELLING</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-8">
+            <div className="inline-block p-10 border-2 border-primary bg-primary text-black">
+              <span className="text-6xl font-black block leading-none">100+</span>
+              <span className="uppercase tracking-widest font-black text-sm block mt-2">VIDEOS_OPTIMIZED</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="order-1 lg:order-2 flex justify-center">
+          <div className="relative w-full aspect-square max-w-[500px] border-8 border-white/5">
+            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full z-0" />
+            <div className="relative w-full h-full grayscale hover:grayscale-0 transition-all duration-700 border-4 border-primary z-10">
               {profileImage && (
                 <Image
                   src={profileImage.imageUrl}
@@ -20,38 +53,6 @@ export function About() {
                   data-ai-hint={profileImage.imageHint}
                 />
               )}
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-8">
-          <h2 className="text-4xl md:text-5xl font-black font-headline text-white">Retention Engineer</h2>
-          
-          <div className="space-y-6 text-muted-foreground">
-            <p className="text-lg leading-relaxed">
-              Hi, I&apos;m Rodger. I specialize in the science of retention. My editing style is built around psychological hooks, perfect pacing, and dynamic storytelling that keeps viewers watching until the very last second.
-            </p>
-            
-            <ul className="space-y-4">
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">●</span>
-                <span><strong>Gaming Specialist:</strong> Expert in translating complex gameplay into digestible, viral stories.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">●</span>
-                <span><strong>Short-Form Mastery:</strong> Specialized in TikTok, Reels, and Shorts designed to hit the algorithm.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary font-bold">●</span>
-                <span><strong>Growth Focused:</strong> I don&apos;t just edit videos; I collaborate on your channel&apos;s strategic growth.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="pt-6">
-            <div className="inline-block px-8 py-4 bg-secondary rounded-2xl border-l-4 border-primary">
-              <span className="text-4xl font-black text-white">100+</span>
-              <span className="ml-4 text-muted-foreground uppercase tracking-widest font-bold text-sm">Videos Optimized</span>
             </div>
           </div>
         </div>
