@@ -5,18 +5,26 @@ import { ContactDialog } from "./contact-dialog";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
-      <div className="max-w-6xl mx-auto space-y-12 z-10 pt-20">
-        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-bold tracking-tighter leading-[0.85] animate-in fade-in slide-in-from-bottom-12 duration-1000">
+      <div className="max-w-6xl mx-auto space-y-12 z-10 pt-20 flex flex-col items-center">
+        <div className="mb-4 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <img 
+            src="/rcs.png" 
+            alt="Rodger Creations Studio" 
+            className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto brightness-[10] filter contrast-200"
+          />
+        </div>
+        
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-bold tracking-tighter leading-[0.85] animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200">
           YOU CREATE.<br />
           <span className="bg-primary text-black px-4 inline-block transform -rotate-1">I RETAIN.</span>
         </h1>
         
-        <p className="text-lg md:text-2xl text-white/80 max-w-2xl mx-auto font-mono uppercase tracking-tight leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
+        <p className="text-lg md:text-2xl text-white/80 max-w-2xl mx-auto font-mono uppercase tracking-tight leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
           RETENTION ENGINEERING FOR YOUTUBE AND SHORT-FORM. <br className="hidden md:block" />
           YOUR FIRST EDIT IS ON ME. ZERO RISK.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-500">
           <ContactDialog>
             <Button size="lg" className="rounded-none bg-primary text-black hover:bg-white hover:text-black font-bold px-12 h-16 text-xl shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] transition-all glitch-hover w-full sm:w-auto">
               GET MY FREE EDIT ➔
