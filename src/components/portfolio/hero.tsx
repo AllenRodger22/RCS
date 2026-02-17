@@ -13,9 +13,9 @@ export function Hero() {
           alt="Studio Background" 
           fill 
           priority
-          className="object-cover opacity-50"
+          className="object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
       </div>
 
       <div className="max-w-6xl mx-auto z-10 flex flex-col items-center relative">
