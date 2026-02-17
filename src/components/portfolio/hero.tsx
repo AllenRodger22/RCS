@@ -10,7 +10,7 @@ export function Hero() {
           <img 
             src="/rcs.png" 
             alt="Rodger Creations Studio" 
-            className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto brightness-[10] filter contrast-200"
+            className="h-72 sm:h-[384px] md:h-[480px] lg:h-[576px] w-auto brightness-[10] filter contrast-200"
           />
         </div>
         
