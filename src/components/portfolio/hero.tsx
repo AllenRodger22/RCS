@@ -6,8 +6,8 @@ export function Hero() {
   return (
     <section className="relative min-h-[85vh] flex flex-col items-center justify-center text-center px-6 py-12 overflow-hidden bg-black">
       <div className="max-w-6xl mx-auto z-10 flex flex-col items-center">
-        {/* Logo with massive scale and aggressive negative margin to pull the text up */}
-        <div className="relative -mb-32 sm:-mb-48 md:-mb-56 lg:-mb-64 animate-in fade-in duration-1000">
+        {/* Logo with massive scale and aggressive negative margins to tighten spacing */}
+        <div className="relative -mt-20 sm:-mt-32 md:-mt-40 lg:-mt-48 -mb-32 sm:-mb-48 md:-mb-56 lg:-mb-64 animate-in fade-in duration-1000">
           <img 
             src="/rcs.png" 
             alt="Rodger Creations Studio" 
