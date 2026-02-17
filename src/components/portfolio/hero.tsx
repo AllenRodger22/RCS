@@ -6,21 +6,21 @@ import { ContactDialog } from "./contact-dialog";
 export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-24 overflow-hidden bg-black">
-      {/* Background Image with Gradient Overlay */}
+      {/* Background Image with Blur and Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <Image 
           src="/fundo.jpg" 
           alt="Studio Background" 
           fill 
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-30 blur-[6px] scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
       </div>
 
       <div className="max-w-6xl mx-auto z-10 flex flex-col items-center relative">
-        {/* Logo with massive scale and aggressive negative margins */}
-        <div className="relative -mt-24 sm:-mt-32 md:-mt-40 lg:-mt-48 -mb-32 sm:-mb-48 md:-mb-56 lg:-mb-64 animate-in fade-in duration-1000">
+        {/* Logo with massive scale and aggressive negative margins to pull text closer */}
+        <div className="relative -mt-32 sm:-mt-40 md:-mt-48 lg:-mt-56 -mb-40 sm:-mb-56 md:-mb-64 lg:-mb-72 animate-in fade-in duration-1000">
           <img 
             src="/rcs.png" 
             alt="Rodger Creations Studio" 
