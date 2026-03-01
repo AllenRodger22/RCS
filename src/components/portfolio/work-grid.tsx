@@ -9,22 +9,22 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const WORKS = [
   {
-    title: "Introduction",
+    title: "When everything falls apart",
     id: "work-1",
     label: "RETENTION_STRATEGY_01",
-    url: "https://youtube.com/shorts/5dd3ZVhdiU4?feature=share"
+    url: "https://www.youtube.com/shorts/DN4XYoiloGQ"
   },
   {
-    title: "Police Frog",
+    title: "Rice and Meat",
     id: "work-2",
     label: "VIRAL_HOOK_STORY",
-    url: "https://youtube.com/shorts/SjNyuxpLyDw?feature=share"
+    url: "https://www.youtube.com/shorts/3tRuxHhYtVQ"
   },
   {
-    title: "RANT",
+    title: "Leozinho voou na briga",
     id: "work-3",
     label: "FAST_PACE_DYNAMICS",
-    url: "https://youtube.com/shorts/j2LZhWu-Nwg?feature=share"
+    url: "https://www.youtube.com/shorts/ebskw1QIbf8"
   }
 ];
 

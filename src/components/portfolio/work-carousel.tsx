@@ -1,4 +1,3 @@
-
 "use client"
 
 import * as React from "react"
@@ -17,19 +16,19 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 
 const WORKS = [
   {
-    title: "Introduction",
+    title: "When everything falls apart",
     id: "work-1",
-    url: "https://youtube.com/shorts/5dd3ZVhdiU4?feature=share"
+    url: "https://www.youtube.com/shorts/DN4XYoiloGQ"
   },
   {
-    title: "Police Frog",
+    title: "Rice and Meat",
     id: "work-2",
-    url: "https://youtube.com/shorts/SjNyuxpLyDw?feature=share"
+    url: "https://www.youtube.com/shorts/3tRuxHhYtVQ"
   },
   {
-    title: "RANT",
+    title: "Leozinho voou na briga",
     id: "work-3",
-    url: "https://youtube.com/shorts/j2LZhWu-Nwg?feature=share"
+    url: "https://www.youtube.com/shorts/ebskw1QIbf8"
   },
   {
     title: "Future Project",
