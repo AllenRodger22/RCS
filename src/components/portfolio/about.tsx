@@ -34,7 +34,7 @@ export function About() {
 
           <div className="pt-8">
             <div className="inline-block p-10 border-2 border-primary bg-primary text-black">
-              <span className="text-6xl font-black block leading-none">130</span>
+              <span className="text-6xl font-black block leading-none">130+</span>
               <span className="uppercase tracking-widest font-black text-sm block mt-2">VIDEOS_OPTIMIZED</span>
             </div>
           </div>
